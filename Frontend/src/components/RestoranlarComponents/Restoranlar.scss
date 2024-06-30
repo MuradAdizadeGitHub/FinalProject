@@ -1,0 +1,85 @@
+.restoranlar-card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    }
+    .restoranlar{
+        background-color: rgb(243, 242, 242);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .restoranlar-top{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    }
+    .restoranlar-head{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .restoranlar-img{
+        max-width: 220px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .restoranlar-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding-bottom: 40px;
+        }
+        @media only screen and (max-width: 991px) {
+            .restoranlar-cards{
+                grid-template-columns: 1fr;
+                }
+            }
+        .restoranlar-general{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+    .restoranlar-card-items{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+        // restoranlar image
+        .restoranlarimg-general{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        @media only screen and (max-width: 768px) {
+            .restoranlarimg-general{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            }
+        .restoranlarimg-img{
+          max-width: 550px;
+          width: 100%;
+        }
+        .restoranlarimg{
+            padding: 20px;
+            border: 1px solid gray;
+    
+        }
+        .restoranlarimg-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            gap: 30px;
+        }
+    
+    
+    
+    

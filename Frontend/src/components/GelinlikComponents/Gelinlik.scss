@@ -1,0 +1,93 @@
+.gelinlik-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.gelinlik {
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gelinlik-top {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.gelinlik-head {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gelinlik-img {
+    max-width: 290px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gelinlik-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+    .gelinlik-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .gelinlik-cards{
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+.gelinlik-general {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gelinlik-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+// gelinlik image
+.gelinlikimg-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 768px) {
+    .gelinlikimg-general{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
+.gelinlikimg-img {
+    max-width: 550px;
+    width: 100%;
+}
+
+.gelinlikimg {
+    padding: 20px;
+    border: 1px solid gray;
+
+}
+
+.gelinlikimg-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    gap: 30px;
+}

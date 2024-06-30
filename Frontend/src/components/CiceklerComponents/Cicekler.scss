@@ -1,0 +1,96 @@
+.cicekler-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.cicekler {
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cicekler-top {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.cicekler-head {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cicekler-img {
+    max-width: 290px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cicekler-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+    .cicekler-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .cicekler-cards{
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+    
+.cicekler-general {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cicekler-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+// cicekler image
+.ciceklerimg-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 768px) {
+    .ciceklerimg-general{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
+.ciceklerimg-img {
+    max-width: 550px;
+    width: 100%;
+}
+
+.ciceklerimg {
+    padding: 20px;
+    border: 1px solid gray;
+
+}
+
+
+
+.ciceklerimg-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    gap: 30px;
+}

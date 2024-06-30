@@ -1,0 +1,85 @@
+.musiqiqrupu-card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    }
+    .musiqiqrupu{
+        background-color: rgb(243, 242, 242);
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        align-items: center;
+    }
+    .musiqiqrupu-top{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    }
+    .musiqiqrupu-head{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .musiqiqrupu-img{
+        max-width: 220px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .musiqiqrupu-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding-bottom: 40px;
+        }
+        @media only screen and (max-width: 991px) {
+            .musiqiqrupu-cards{
+                grid-template-columns: 1fr;
+                }
+            }
+        .musiqiqrupu-general{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+    .musiqiqrupu-card-items{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+        // musiqiqrupu image
+        .musiqiqrupuimg-general{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        @media only screen and (max-width: 768px) {
+            .musiqiqrupuimg-general{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            }
+        .musiqiqrupuimg-img{
+          max-width: 550px;
+          width: 100%;
+        }
+        .musiqiqrupuimg{
+            padding: 20px;
+            border: 1px solid gray;
+    
+        }
+        .musiqiqrupuimg-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            gap: 30px;
+        }
+    
+    
+    
+    

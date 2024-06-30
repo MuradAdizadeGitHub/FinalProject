@@ -1,0 +1,85 @@
+.gozelliksalonu-card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    }
+    .gozelliksalonu{
+        background-color: rgb(243, 242, 242);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .gozelliksalonu-top{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    }
+    .gozelliksalonu-head{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .gozelliksalonu-img{
+        max-width: 220px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .gozelliksalonu-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        padding-bottom: 40px;
+        }
+        @media only screen and (max-width: 991px) {
+            .gozelliksalonu-cards{
+                grid-template-columns: 1fr;
+                }
+            }
+        .gozelliksalonu-general{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+    .gozelliksalonu-card-items{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+        // gozelliksalonu image
+        .gozelliksalonuimg-general{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        @media only screen and (max-width: 768px) {
+            .gozelliksalonuimg-general{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            }
+        .gozelliksalonuimg-img{
+          max-width: 550px;
+          width: 100%;
+        }
+        .gozelliksalonuimg{
+            padding: 20px;
+            border: 1px solid gray;
+    
+        }
+        .gozelliksalonuimg-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            gap: 30px;
+        }
+    
+    
+    
+    

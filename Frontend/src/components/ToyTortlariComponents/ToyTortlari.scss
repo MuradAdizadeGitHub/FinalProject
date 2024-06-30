@@ -1,0 +1,93 @@
+.toytortlari-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.toytortlari {
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.toytortlari-top {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.toytortlari-head {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.toytortlari-img {
+    max-width: 290px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.toytortlari-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+    .toytortlari-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .toytortlari-cards{
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+.toytortlari-general {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.toytortlari-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+// toytortlari image
+.toytortlariimg-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 768px) {
+    .toytortlariimg-general{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
+.toytortlariimg-img {
+    max-width: 550px;
+    width: 100%;
+}
+
+.toytortlariimg {
+    padding: 20px;
+    border: 1px solid gray;
+
+}
+
+.toytortlariimg-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    gap: 30px;
+}

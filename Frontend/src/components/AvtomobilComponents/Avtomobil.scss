@@ -1,0 +1,95 @@
+.avtomobil-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.avtomobil {
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.avtomobil-top {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.avtomobil-head {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.avtomobil-img {
+    max-width: 290px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.avtomobil-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+    @media only screen and (max-width: 991px) {
+        .avtomobil-cards{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .avtomobil-cards{
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+            }
+.avtomobil-general {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.avtomobil-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+// avtomobil image
+.avtomobilimg-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 768px) {
+    .avtomobilimg-general{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }
+
+.avtomobilimg-img {
+    max-width: 550px;
+    width: 100%;
+}
+
+.avtomobilimg {
+    padding: 20px;
+    border: 1px solid gray;
+
+}
+
+.avtomobilimg-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    gap: 30px;
+}

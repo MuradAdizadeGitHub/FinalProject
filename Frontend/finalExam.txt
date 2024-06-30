@@ -1,0 +1,20 @@
+sifarisler ucun
+tarix :
+sadliq sarayi ve ya restaurantlar:
+nefer sayi :
+
+
+
+
+<Link to={'/'}>Home</Link>
+					<Link to={'/saraylar'}>Şadlıq sarayları</Link>
+					<Link to={'/restoranlar'}>Restoranlar</Link>
+					<Link to={'/fotovideo'}>Foto və Video</Link>
+					<Link to={'/dj'}>DJ</Link>
+					<Link to={'/aparici'}>Aparıcı</Link>
+					<Link to={'/musiqiqrupu'}>Musiqi qrupu</Link>
+					<Link to={'/gelinlik'}>Gəlinlik icarəsi</Link>
+					<Link to={'/avtomobil'}>Avtomobil icarəsi</Link>
+					<Link to={'/gozelliksalonu'}>Gözəllik salonu</Link>
+					<Link to={'/toytortlari'}>Toy tortları</Link>
+					<Link to={'/cicekler'}>Çiçəklər</Link>

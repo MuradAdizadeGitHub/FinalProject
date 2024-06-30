@@ -1,0 +1,94 @@
+.saraylar-card{
+display: flex;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+.saraylar{
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.saraylar-top{
+display: flex;
+margin-top: 40px;
+justify-content: space-between;
+}
+.saraylar-head{
+    font-size: 22px;
+    font-weight: 600;
+}
+.saraylar-img{
+    max-width: 220px;
+    width: 100%;
+    border-radius: 10px;
+}
+.saraylar-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    padding-bottom: 40px;
+    }
+    @media only screen and (max-width: 991px) {
+        .saraylar-cards{
+            grid-template-columns: 1fr;
+            }
+      }
+    .saraylar-general{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+.saraylar-card-items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+    // saraylar image
+    .saraylarimg-general{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr; 
+    }
+    @media only screen and (max-width: 768px) {
+        .saraylarimg-general{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        }
+    .saraylarimg-img{
+      max-width: 550px;
+      width: 100%;
+    }
+    .saraylarimg{
+        padding: 20px;
+        border: 1px solid gray;
+
+    }
+    .saraylarimg-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        gap: 30px;
+    }
+
+
+
+.saraylarimg-head{
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(69, 69, 69);
+}
+.saraylarimg-title{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(69, 69, 69);
+}
