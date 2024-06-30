@@ -43,7 +43,7 @@ function Footer() {
 
 				<div>
 				<i class="fa-solid fa-envelope"></i>
-					<p><Link style={{color:'white'}}>support@weddingplanner.com</Link></p>
+					<p><Link style={{color:'white'}}>support@wedding.com</Link></p>
 				</div>
 
 			</div>
