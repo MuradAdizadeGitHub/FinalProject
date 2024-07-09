@@ -1,0 +1,29 @@
+.admintop{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.adminlogoimg{
+    max-width: 90px;
+    width: 100%;
+}
+.adminapanelhead{
+    max-width: 130px;
+    padding: 20px;
+    width: 100%;
+    h1{
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+.adminnav{
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminnavbargeneral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

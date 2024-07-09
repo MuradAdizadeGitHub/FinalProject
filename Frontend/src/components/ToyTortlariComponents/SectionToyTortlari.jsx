@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./ToyTortlari.scss";
 import { Link } from "react-router-dom";
+import { WishListContext } from "../../context/WishListProvider/WishListProvider";
 function SectionToyTortlari() {
   const [toytortlari, settoytortlari] = useState([]);
-
+  const { IncreaseWishlist, IsExist } = useContext(WishListContext);
   useEffect(() => {
     getAlltoytortlari();
   }, []);
@@ -29,6 +30,19 @@ function SectionToyTortlari() {
               return (
                 <>
                   <div className="toytortlari-card">
+                  <span onClick={() => IncreaseWishlist(x)} className="btn">
+                      {IsExist(x) ? (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-solid fa-heart"
+                        ></i>
+                      ) : (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-regular fa-heart"
+                        ></i>
+                      )}
+                    </span>
                     <div>
                       <img className="toytortlari-img" src={x.image} />
                     </div>

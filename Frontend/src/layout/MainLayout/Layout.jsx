@@ -7,8 +7,8 @@ import Topbar from '../../components/Topbar/Topbar'
 function Layout() {
   return (
   <>
-  <Topbar></Topbar>
   <Navbar></Navbar>
+  <Topbar></Topbar>
   <Outlet></Outlet>
   <Footer></Footer>
   </>

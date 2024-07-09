@@ -1,45 +1,87 @@
-// .topbar-img {
-//     max-width: 200px;
-//     width: 100%;
-// }
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-// .topbar-general {
-//     display: flex;
-//     justify-content: space-between;
-// }
+.swiper-wrapper {
+  display: flex;
+  margin-top: 15px;
+  text-align: center;
+}
 
-// .topbar-items {
-//     gap: 20px;
-//     display: flex;
-//     align-items: center;
-// }
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: gray;
+  margin-right: 30px;
+}
 
-// .topbar {
-//     padding: 10px;
-//     border-bottom: 1px solid gray;
-// }
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: gray;
+  margin-left: 30px;
+}
 
-// .topbar-button {
-//     width: 130px;
-//     padding: 5px;
-//     cursor: pointer;
-//     font-size: 17px;
-// }
+.imgcarusel {
+  max-width: 60px;
+  width: 100%;
+  margin: auto;
+}
 
-// .topbar-select {
-//     padding: 5px;
-//     font-size: 17px;
-// }
+.sar {
+  font-size: 20px;
+  color: black;
+}
 
-// .fa-solid {
-//     font-size: 23px;
-// }
+.sar:hover{
+  color: gray;
+}
 
-// .fa-regular {
-//     font-size: 23px;
-// }
+@media only screen and (max-width: 500px) {
+
+  .sar {
+    font-size: 12px;
+  }
+
+  .imgcarusel {
+    max-width: 35px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
 
+.generalcarusel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+.topbar{
+  border-bottom: 1px solid gray;
+  position: relative;
+  z-index: 0;
+}

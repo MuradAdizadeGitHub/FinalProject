@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Aparici.scss'
 import { Link } from 'react-router-dom'
+import { WishListContext } from '../../context/WishListProvider/WishListProvider';
 function SectionAparici() {
+  const { IncreaseWishlist, IsExist } = useContext(WishListContext);
   const [aparici, setaparici] = useState([]);
 
   useEffect(() => {
@@ -13,6 +15,14 @@ function SectionAparici() {
     const data = await res.json();
     setaparici(data);
   }
+
+  function SortAz(params) {
+    setaparici(aparici.toSorted((a, b) => (a[params] > b[params]) ? 1 : ((b[params] > a[params]) ? -1 : 0)))
+}
+function SortZa(params) {
+    setaparici(aparici.toSorted((a, b) => (a[params] < b[params]) ? 1 : ((b[params] < a[params]) ? -1 : 0)))
+}
+
   return (
     <section className="aparici">
     <div className="container">
@@ -29,6 +39,19 @@ function SectionAparici() {
   aparici.map((x)=>{
     return <>
     <div className="aparici-card">
+    <span onClick={() => IncreaseWishlist(x)} className="btn">
+                      {IsExist(x) ? (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-solid fa-heart"
+                        ></i>
+                      ) : (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-regular fa-heart"
+                        ></i>
+                      )}
+                    </span>
            <div>
              <img className="aparici-img"
                src={x.image}

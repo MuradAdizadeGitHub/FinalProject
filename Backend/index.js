@@ -2,11 +2,24 @@ import cors from "cors";
 import express from "express";
 import mongoose from "mongoose";
 
+import { usersRouter } from './src/Routes/UsersRoute.js';
+import 'dotenv/config'
+import { authRouter } from './src/Routes/AuthRoute.js';
+
+
+
 const app = express();
-const port = 3000;
 app.use(express.json());
 
 app.use(cors());
+
+
+
+app.use('/users',usersRouter);
+app.use('/',authRouter)
+
+
+
 // 
 
 const saraylarSchema = new mongoose.Schema({
@@ -23,6 +36,7 @@ const restoranlarSchema = new mongoose.Schema({
   location: String,
   title: String,
   tutum: Number,  
+  price:Number
 });
 
 
@@ -192,10 +206,9 @@ app.post("/saraylar", async (req, res) => {
   res.send(product);
 });
 
-mongoose
-  .connect("mongodb+srv://murad:murad@cluster0.obvc1sg.mongodb.net/")
-  .then(() => console.log("Connected!"));
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.log('Failed to connect to MongoDB', err));
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
+  });

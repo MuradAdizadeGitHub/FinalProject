@@ -1,0 +1,56 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.registeritems{
+display: flex;
+flex-direction: column;
+gap: 10px;
+input{
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 100%;
+}
+}
+.registergeneral{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+    
+}
+
+
+.registerhead {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+
+    p {
+        color: #323232;
+    }
+}
+
+.register1{
+    display: flex;
+    gap: 30px;
+}
+.regster{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.registerbtn{
+padding: 15px;
+color: white;
+background-color: #323232;
+cursor: pointer;
+border-radius: 3px;
+font-size: 18px;
+border-style: none;
+}

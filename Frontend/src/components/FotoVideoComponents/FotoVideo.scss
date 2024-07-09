@@ -1,5 +1,4 @@
 .fotovideo-card {
-    display: flex;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
@@ -24,24 +23,30 @@
 }
 
 .fotovideo-img {
-    max-width: 220px;
+    max-width: 290px;
     width: 100%;
     border-radius: 10px;
 }
 
 .fotovideo-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 15px;
     padding-bottom: 40px;
 }
 @media only screen and (max-width: 991px) {
     .fotovideo-cards{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         }
     }
-
+    @media only screen and (max-width: 768px) {
+        .fotovideo-cards{
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
 .fotovideo-general {
     display: flex;
     flex-direction: column;
@@ -52,8 +57,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-left: 20px;
-    margin-top: 20px;
+    padding: 15px;
 }
 
 // fotovideo image
@@ -68,7 +72,6 @@
         grid-template-columns: 1fr;
     }
     }
-
 .fotovideoimg-img {
     max-width: 550px;
     width: 100%;

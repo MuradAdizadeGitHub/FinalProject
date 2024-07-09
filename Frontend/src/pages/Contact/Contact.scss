@@ -1,0 +1,141 @@
+.contact-items {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .contact-items {
+        grid-template-columns: 1fr ;
+        gap: 40px;
+
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.contact-icon-area {
+    max-width: 60px;
+    min-height: 60px;
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: white;
+    }
+}
+
+.contact-icon-head {
+    font-size: 22px;
+    color: #666666;
+}
+
+.contact-icon-text {
+    font-size: 24px;
+    color: #33383B;
+
+}
+
+.contact-icon-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.contact-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.contactus-head {
+    font-size: 60px;
+}
+
+.contactus-text {
+    font-size: 27px;
+}
+
+
+.input {
+    padding: 7px;
+    width: 100%;
+}
+
+.textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.formgeneral {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.contact-info {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 28px;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.labelitems {
+    display: flex;
+    max-width: 550px;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.labelgeneral {
+    display: flex;
+    gap: 10px;
+
+}
+
+.formsend {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 16px;
+    background-color: #6d6d6d;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}

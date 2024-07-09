@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Gelinlik.scss'
 import { Link } from 'react-router-dom'
+import { WishListContext } from '../../context/WishListProvider/WishListProvider';
 function SectionGelinlik() {
   const [gelinlik, setgelinlik] = useState([]);
-
+  const { IncreaseWishlist, IsExist } = useContext(WishListContext);
   useEffect(() => {
     getAllgelinlik();
   }, []);
@@ -13,6 +14,13 @@ function SectionGelinlik() {
     const data = await res.json();
     setgelinlik(data);
   }
+
+  function SortAz(params) {
+    setgelinlik(gelinlik.toSorted((a, b) => (a[params] > b[params]) ? 1 : ((b[params] > a[params]) ? -1 : 0)))
+}
+function SortZa(params) {
+    setgelinlik(gelinlik.toSorted((a, b) => (a[params] < b[params]) ? 1 : ((b[params] < a[params]) ? -1 : 0)))
+}
   return (
     <section className="gelinlik">
     <div className="container">
@@ -29,6 +37,19 @@ function SectionGelinlik() {
               return (
                 <>
                   <div className="gelinlik-card">
+                  <span onClick={() => IncreaseWishlist(x)} className="btn">
+                      {IsExist(x) ? (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-solid fa-heart"
+                        ></i>
+                      ) : (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-regular fa-heart"
+                        ></i>
+                      )}
+                    </span>
                     <div>
                       <img className="gelinlik-img" src={x.image} />
                     </div>

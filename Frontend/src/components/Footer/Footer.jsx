@@ -43,7 +43,7 @@ function Footer() {
 
 				<div>
 				<i class="fa-solid fa-envelope"></i>
-					<p><Link style={{color:'white'}}>support@wedding.com</Link></p>
+					<p><Link style={{color:'white'}}>tural434elizade@gmail.com</Link></p>
 				</div>
 
 			</div>
@@ -57,10 +57,10 @@ function Footer() {
 
 				<div class="footer-icons">
 
-					<Link><i class="fa-brands fa-instagram"></i></Link>
-					<Link><i class="fa-brands fa-linkedin"></i></Link>
-					<Link><i class="fa-brands fa-square-facebook"></i></Link>
-					<Link><i class="fa-brands fa-square-twitter"></i></Link>
+					<Link to={'https://www.instagram.com/'}><i class="fa-brands fa-instagram"></i></Link>
+					<Link to={'https://www.linkedin.com/'}><i class="fa-brands fa-linkedin"></i></Link>
+					<Link to={'https://www.facebook.com/'}><i class="fa-brands fa-square-facebook"></i></Link>
+					<Link to={'https://x.com/'}><i class="fa-brands fa-square-twitter"></i></Link>
 
 				</div>
 

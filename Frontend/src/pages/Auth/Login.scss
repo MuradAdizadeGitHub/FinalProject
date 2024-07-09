@@ -1,0 +1,95 @@
+.murad {
+    max-width: 500px;
+    width: 100%;
+}
+
+.logingeneral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+    place-items: center;
+
+}
+
+.rightlogin {
+    background-color: gray;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 50px;
+}
+
+.emailpassword {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.emailpasswordgeneral {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginhead {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+
+    p {
+        color: #323232;
+    }
+}
+
+.leftlogin {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.emailpassword {
+    input {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.submit {
+    background-color: #666666;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-style: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.registertext {
+    color: #666666;
+    font-weight: 800;
+}
+
+.registertext:hover {
+    color: gray;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .murad {
+        display: none;
+    }
+
+    .logingeneral {
+        grid-template-columns: 1fr;
+
+    }
+
+}

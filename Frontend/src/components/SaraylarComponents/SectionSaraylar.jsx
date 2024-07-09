@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Saraylar.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { WishListContext } from "../../context/WishListProvider/WishListProvider";
 function SectionSaraylar() {
   const [saraylar, setsaraylar] = useState([]);
-
+  const { IncreaseWishlist, IsExist } = useContext(WishListContext);
   useEffect(() => {
     getAllsaraylar();
   }, []);
@@ -14,6 +15,13 @@ function SectionSaraylar() {
     const data = await res.json();
     setsaraylar(data);
   }
+
+  function SortAz(params) {
+    setsaraylar(saraylar.toSorted((a, b) => (a[params] > b[params]) ? 1 : ((b[params] > a[params]) ? -1 : 0)))
+}
+function SortZa(params) {
+    setsaraylar(saraylar.toSorted((a, b) => (a[params] < b[params]) ? 1 : ((b[params] < a[params]) ? -1 : 0)))
+}
   return (
     <section className="saraylar">
       <div className="container">
@@ -21,8 +29,8 @@ function SectionSaraylar() {
           <div className="saraylar-top">
             <p className="saraylar-head">Şadlıq Sarayı</p>
             <div>
-              <button>Price A-Z</button>
-              <button>Price Z-A</button>
+              <button onClick={() => SortAz("price")}>Price A-Z</button>
+              <button onClick={() => SortZa("price")}>Price Z-A</button>
             </div>
           </div>
           <div className="saraylar-cards">
@@ -30,6 +38,19 @@ function SectionSaraylar() {
               return (
                 <>
                   <div className="saraylar-card">
+                  <span onClick={() => IncreaseWishlist(x)} className="btn">
+                      {IsExist(x) ? (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-solid fa-heart"
+                        ></i>
+                      ) : (
+                        <i
+                          style={{ fontSize: "30px" }}
+                          className="fa-regular fa-heart"
+                        ></i>
+                      )}
+                    </span>
                     <div>
                       <img className="saraylar-img" src={x.image} alt="" />
                     </div>
